@@ -1,7 +1,8 @@
 version: '3.6'
 services:
   telnet:
-    image: 'q-server:latest'
+    build: .
+#    image: 'q-server:latest'
     restart: always
     ports:
       - '38182:38182'
